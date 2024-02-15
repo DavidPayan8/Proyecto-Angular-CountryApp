@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component} from '@angular/core';
 import { SearchBoxComponent } from '../../../shared/components/search-box/search-box.component';
 import { CountryTablaComponent } from '../../component/country-tabla/country-tabla.component';
 import { PaisService } from '../../services/pais.service';

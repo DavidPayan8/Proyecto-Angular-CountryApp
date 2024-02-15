@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
 import { PaisService } from '../../services/pais.service';
 import { Country } from '../../interfaces/country';
+import { CountryTablaComponent } from '../../component/country-tabla/country-tabla.component';
+import { CommonModule } from '@angular/common';
+import { SearchBoxComponent } from '../../../shared/components/search-box/search-box.component';
 
 @Component({
   selector: 'app-by-region-page',
   standalone: true,
-  imports: [],
+  imports: [CountryTablaComponent,CommonModule,SearchBoxComponent],
   templateUrl: './by-region-page.component.html',
   styles: ``
 })

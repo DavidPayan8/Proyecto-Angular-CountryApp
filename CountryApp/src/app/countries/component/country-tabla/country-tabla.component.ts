@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Country } from '../../interfaces/country';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './country-tabla.component.html',
   styleUrl: './country-tabla.component.css'
 })
-export class CountryTablaComponent {
+export class CountryTablaComponent implements OnInit{
   @Input() countries: Country[] =[];
 
   constructor() { }
