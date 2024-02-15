@@ -1,8 +1,9 @@
 export interface Country {
-    name: string;
+    name: name;
     alpha2Code: string;
     alpha3Code: string;
     callingCodes: string[];
+    cca3:string;
     capital: string;
     altSpellings: string[];
     region: string;
@@ -13,7 +14,7 @@ export interface Country {
     currencies: Currency[];
     languages: Language[];
     translations: Translations;
-    flags: string;
+    flags: flags;
 }
 
 export interface name {
@@ -48,4 +49,6 @@ export interface Translations {
 }
 
 
-
+export interface flags{
+    svg:string;
+}

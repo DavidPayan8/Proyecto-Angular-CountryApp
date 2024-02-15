@@ -13,14 +13,16 @@ import { CommonModule } from '@angular/common';
   styles: ``
 })
 export class CountryPageComponent {
-  activatedRoute!: ActivatedRoute;
   router!: Router;
   country!: Country;
-  constructor(private countriesService: PaisService) {}
+  constructor( 
+    private activatedRoute: ActivatedRoute,
+    private countryService: PaisService
+    ) { }
   ngOnInit(): void {
     this.activatedRoute.params
     .pipe(
-    switchMap( ({ id }) => this.countriesService.getPaisPorAlpha( id )),
+    switchMap( ({ id }) => this.countryService.getPaisPorAlpha( id )),
       )
         .subscribe( country => {
           if ( !country ) return this.router.navigateByUrl('');

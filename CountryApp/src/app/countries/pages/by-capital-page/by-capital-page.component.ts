@@ -1,22 +1,33 @@
 import { Component, Input } from '@angular/core';
 import { SearchBoxComponent } from '../../../shared/components/search-box/search-box.component';
+import { CountryTablaComponent } from '../../component/country-tabla/country-tabla.component';
+import { PaisService } from '../../services/pais.service';
+import { Country } from '../../interfaces/country';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-by-capital-page',
   standalone: true,
-  imports: [SearchBoxComponent],
+  imports: [SearchBoxComponent , CountryTablaComponent,CommonModule],
   templateUrl: './by-capital-page.component.html',
   styles: ``
 })
 export class ByCapitalPageComponent {
-  @Input() placeholder!: string;
+  cod : string = '';
+  countries : Country[] = [];
 
-  constructor() { }
+  constructor( private paisService: PaisService ) { }
 
-  ngOnInit(): void {
+  buscar( cod: string ) {
+    this.cod  = cod;
+
+    this.paisService.buscarCapital( cod )
+      .subscribe( (countries) => {
+        this.countries = countries;
+      }, (err) => {
+        this.countries   = [];
+      });
+
   }
 
-  onSearch(text: string) {
-    console.log(text);
-  }
 }
