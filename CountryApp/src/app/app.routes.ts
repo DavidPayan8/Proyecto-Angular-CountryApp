@@ -22,7 +22,12 @@ import { ViewCountryComponent } from "./countries/pages/view-country/view-countr
         component: ContactPageComponent
     },
     {
-        path: '',
+        path: 'pais',
+        component: ByCountryPageComponent,
+        pathMatch: 'full'
+    },
+    {
+        path: 'pais/:id',
         component: ByCountryPageComponent,
         pathMatch: 'full'
     },
@@ -35,7 +40,7 @@ import { ViewCountryComponent } from "./countries/pages/view-country/view-countr
         component: ByCapitalPageComponent
     },
     {
-        path: 'pais/:id',
+        path: 'verPais/:id',
         component: ViewCountryComponent
     },
     {

@@ -13,16 +13,16 @@ export class PaisService {
 
   private apiUrl: string = 'https://restcountries.com/v3.1';
 
-  get httpParams () {
+/*   get httpParams () {
     return new HttpParams().set( 'fields', 'name.common,capital,cca3,flags.png,flags.svg,population' );
-  }
+  } */
 
   constructor( private http: HttpClient ) { }
 
   buscarPais( termino: string ): Observable<Country[]> {
     const url = `${ this.apiUrl }/name/${ termino }`;
     
-    return this.http.get<Country[]>( url, { params: this.httpParams } );
+    return this.http.get<Country[]>( url );
   }
 
   buscarCapital(term: string): Observable<Country[]> {
@@ -47,7 +47,7 @@ export class PaisService {
 
     const url = `${ this.apiUrl }/region/${ region }`;
 
-    return this.http.get<Country[]>( url, { params: this.httpParams } )
+    return this.http.get<Country[]>( url )
             .pipe(
               tap( console.log )
             )

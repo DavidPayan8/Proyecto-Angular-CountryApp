@@ -3,14 +3,11 @@ export interface Country {
     callingCodes: string[];
     cca3:string;
     capital: string;
-    altSpellings: string[];
     region: string;
     subregion: string;
     population: number;
-    nativeName: string;
-    numericCode: string;
-    currencies: Currency[];
-    languages: Language[];
+    timezones:string;
+    maps:Maps;
     translations: Translations;
     flags: flags;
 }
@@ -18,32 +15,42 @@ export interface Country {
 export interface name {
     common:string,
 }
-
-export interface Currency {
-    code: string;
-    name: string;
-    symbol: string;
+export interface Maps{
+    googleMaps:string
 }
-
-export interface Language {
-    iso639_1: string;
-    iso639_2: string;
-    name: string;
-    nativeName: string;
-}
-
 
 export interface Translations {
-    ara: string;
-    por: string;
-    rus: string;
-    spa: string;
-    deu: string;
-    fra: string;
-    ita: string;
-    jpn: string;
-    pol: string;
-    tur: string;
+    ara: {
+        common:string
+    };
+    por: {
+        common:string
+    };
+    rus: {
+        common:string
+    };
+    spa: {
+        common:string
+    };
+    deu:{
+        common:string
+    };
+    fra:{
+        common:string
+    };
+    ita:{
+        common:string
+    };
+    jpn:{
+        common:string
+    };
+    pol:{
+        common:string
+    };
+    tur:{
+        common:string
+    };
+
 }
 
 

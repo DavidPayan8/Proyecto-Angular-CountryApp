@@ -14,13 +14,7 @@
             class="list-group-item list-group-item-action">
             <a class="nav-link"
                [routerLink]="['/pais', country.cca3]">
-                {{ country.name }}
-            </a>
-        </li>
-        <li class="list-group-item list-group-item-action"
-            (click)="buscarSugerido( cod )">
-            <a class="nav-link">
-                Buscar "{{ cod }}"
+                {{ country.name.common }}
             </a>
         </li>
     </ul>

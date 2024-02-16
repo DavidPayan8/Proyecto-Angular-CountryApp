@@ -24,10 +24,10 @@ export class ViewCountryComponent {
 
     this.activatedRoute.params
       .pipe(
-        switchMap( ({ id }) => this.paisService.getPaisPorAlpha( id )  ),
+        switchMap( ({ id }) => this.paisService.getPaisPorAlpha( id )),
         tap( console.log )
       )
-      .subscribe( country => this.country = country );
+      .subscribe( country => this.country = country ,);
 
   }
 }
