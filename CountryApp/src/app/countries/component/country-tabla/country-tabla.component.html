@@ -10,24 +10,24 @@ No hay países que mostrar...
 <thead>
   <tr>
     <th>#</th>
-    <th>Icono</th>
     <th>Bandera</th>
     <th>Nombre</th>
     <th>Capital</th>
     <th>Población</th>
-    <th> <!-- deja un espacio en blanco de momento --></th>
+    <th></th>
   </tr>
 </thead>
 <tbody>
   <tr *ngFor="let country of countries; let i = index">
 	<td> {{ i + 1 }} </td>
             <td>
-                <img class="small-flag" [src]="country.flags.svg" >
+                <img class="small-flag" [src]="country.flags.png" >
             </td>
-            <td> {{ country.capital }}, {{ country.name }}</td>
+            <td> {{ country.name }}</td>
+            <td>{{ country.capital }}</td>
             <td>{{ country.population}}</td>
             <td>
-                <a [routerLink]="['/countries', country.alpha2Code]">Ver mas...</a>
+                <a [routerLink]="['/pais','/:id']">Ver mas...</a>
             </td>
   </tr>
 </tbody>

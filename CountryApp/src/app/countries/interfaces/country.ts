@@ -1,7 +1,5 @@
 export interface Country {
     name: name;
-    alpha2Code: string;
-    alpha3Code: string;
     callingCodes: string[];
     cca3:string;
     capital: string;
@@ -36,19 +34,20 @@ export interface Language {
 
 
 export interface Translations {
-    de: string;
-    es: string;
-    fr: string;
-    ja: string;
-    it: string;
-    br: string;
-    pt: string;
-    nl: string;
-    hr: string;
-    fa: string;
+    ara: string;
+    por: string;
+    rus: string;
+    spa: string;
+    deu: string;
+    fra: string;
+    ita: string;
+    jpn: string;
+    pol: string;
+    tur: string;
 }
 
 
 export interface flags{
     svg:string;
+    png:string;
 }

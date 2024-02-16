@@ -5,6 +5,7 @@ import { ByCountryPageComponent } from "./countries/pages/by-country-page/by-cou
 import { HomePageComponent } from "./shared/pages/home-page/home-page.component";
 import { AboutPageComponent } from "./shared/pages/about-page/about-page.component";
 import { ContactPageComponent } from "./shared/pages/contact-page/contact-page.component";
+import { ViewCountryComponent } from "./countries/pages/view-country/view-country.component";
 
  export const routes: Routes = [
     {
@@ -21,6 +22,11 @@ import { ContactPageComponent } from "./shared/pages/contact-page/contact-page.c
         component: ContactPageComponent
     },
     {
+        path: '',
+        component: ByCountryPageComponent,
+        pathMatch: 'full'
+    },
+    {
         path: 'region',
         component: ByRegionPageComponent
     },
@@ -30,10 +36,10 @@ import { ContactPageComponent } from "./shared/pages/contact-page/contact-page.c
     },
     {
         path: 'pais/:id',
-        component: ByCountryPageComponent
+        component: ViewCountryComponent
     },
     {
         path: '**',
-        redirectTo: 'home'
+        redirectTo: ''
     }
 ];

@@ -6,7 +6,14 @@ import { RouterLink,  } from '@angular/router';
   standalone: true,
   imports: [RouterLink],
   templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.css'
+  styleUrl: './sidebar.component.css',
+  styles: [
+    `
+      li {
+        cursor: pointer;
+      }
+    `
+  ]
 })
 export class SidebarComponent implements OnInit{
   constructor() { }
