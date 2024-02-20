@@ -30,8 +30,4 @@ export class CountryInputComponent implements OnInit{
   buscar() {
     this.onEnter.emit( this.termino );
   }
-
-  teclaPresionada() {
-    this.debouncer.next( this.termino );
-  }
 }
