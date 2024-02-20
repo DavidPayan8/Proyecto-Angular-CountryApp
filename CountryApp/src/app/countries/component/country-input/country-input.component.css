@@ -1,0 +1,48 @@
+/* Estilo para el formulario */
+form {
+    margin-bottom: 20px;
+}
+
+/* Estilo para el campo de entrada */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Estilo para el campo de entrada cuando está enfocado */
+.form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Estilo para el placeholder del campo de entrada */
+.form-control::placeholder {
+    color: #6c757d;
+}
+
+/* Estilo para el texto dentro del campo de entrada */
+.form-control[type="text"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* Estilo para el botón de búsqueda */
+[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+[type="submit"]:hover {
+    background-color: #0056b3;
+}

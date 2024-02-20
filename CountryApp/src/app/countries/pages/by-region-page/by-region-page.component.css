@@ -1,0 +1,41 @@
+/* Estilo para el título "Buscar por región" */
+h3 {
+    margin-bottom: 10px;
+}
+
+/* Estilo para el texto pequeño dentro del título */
+h3 small {
+    color: #6c757d;
+}
+
+/* Estilo para la línea horizontal */
+hr {
+    border-top: 1px solid #dee2e6;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el título "Seleccione la región" */
+h5 {
+    margin-bottom: 10px;
+}
+
+
+button:not(:last-child) {
+    margin-right: 10px; /* Ajusta el valor según el espacio deseado entre los botones */
+}
+
+button:hover {
+    background-color:#333333 ;
+}
+
+/* Estilo para la fila de botones de región */
+.row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+/* Estilo para el contenedor de la tabla de países */
+.country-table-container {
+    margin-top: 20px;
+}

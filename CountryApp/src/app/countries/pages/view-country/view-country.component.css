@@ -1,0 +1,65 @@
+/* Estilo para el contenedor principal del componente */
+.custom-alert {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Estilo para el nombre del país */
+.country-name {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+/* Estilo para la bandera del país */
+.country-flag {
+  max-width: 100%;
+}
+
+/* Estilo para la lista de información del país */
+.country-info-list {
+  padding: 0;
+}
+
+/* Estilo para las etiquetas de información */
+.info-label {
+  font-weight: bold;
+}
+
+/* Estilo para los distintos idiomas */
+.translation-badge {
+  font-size: 14px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+/* Estilo para el enlace de Google Maps */
+.info-link {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.info-link:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para el título de sección */
+.section-title {
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Estilo para las filas del componente */
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+/* Estilo para las columnas del componente */
+.col {
+  padding-left: 10px;
+  padding-right: 10px;
+}

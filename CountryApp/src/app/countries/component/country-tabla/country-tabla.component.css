@@ -1,0 +1,44 @@
+/* Estilo para el contenedor principal del componente */
+.alert-warning {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    color: #856404;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo para el mensaje cuando no hay países */
+.text-center {
+    text-align: center;
+}
+
+/* Estilo para la tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Estilo para las filas de la tabla */
+.table tr {
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Estilo para las celdas de la tabla */
+.table td, .table th {
+    padding: 8px;
+}
+
+/* Estilo para la cabecera de la tabla */
+.table th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilo para las imágenes de las banderas */
+.small-flag {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
